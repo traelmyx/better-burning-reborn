@@ -115,7 +115,8 @@ public final class BetterBurning {
 		level.levelEvent(null, 1009, pos, 0);
 		stack.shrink(1);
 		ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
-		if (!player.getInventory().add(bottle)) player.drop(bottle, false);
+		if (!player.getInventory().add(bottle))
+			level.addFreshEntity(new net.minecraft.world.entity.item.ItemEntity(level, player.getX(), player.getY(), player.getZ(), bottle));
 		return true;
 	}
 
