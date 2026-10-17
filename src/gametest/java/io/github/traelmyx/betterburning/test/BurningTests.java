@@ -183,7 +183,7 @@ public final class BurningTests {
 		*///?}
 		player.setGameMode(GameType.SURVIVAL);
 		Vec3 at = helper.absoluteVec(new Vec3(1.5, 1, 1.5));
-		player.teleportTo(helper.getLevel(), at.x, at.y, at.z, 0, 0);
+		player.setPos(at.x, at.y, at.z);
 		return player;
 	}
 
