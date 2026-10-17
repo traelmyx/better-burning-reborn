@@ -10,7 +10,7 @@ displayName = "${name}"
 authors = "traelmyx (port), Darkhax (original)"
 ${logo_key} = "assets/betterburning/icon.png"
 displayTest = "IGNORE_ALL_VERSION"
-description = '''When the server watchdog kills a frozen server, its crash report now shows every thread's whole stack instead of the first 8 lines. Port of FullStack Watchdog by TelepathicGrunt.'''
+description = '''Small fire tweaks: fire resistance puts flames out, burning skeletons shoot flaming arrows, burning mobs and flint and steel set what they hit alight, punching fire burns you, water bottles put fire out, and mobs killed by fire drop cooked food. Port of Better Burning by Darkhax.'''
 
 [[mixins]]
 config = "betterburning.mixins.json"
