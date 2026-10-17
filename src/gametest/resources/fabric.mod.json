@@ -1,0 +1,14 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}_gametest",
+	"version": "${version}",
+	"name": "Better Burning Reborn GameTests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-gametest": ["io.github.traelmyx.betterburning.test.fabric.FabricGameTests"],
+		"client": ["io.github.traelmyx.betterburning.test.fabric.FabricClientSmoke"]
+	},
+	"depends": {
+		"${id}": "*"
+	}
+}

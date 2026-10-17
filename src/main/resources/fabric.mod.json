@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "Small fire tweaks: fire resistance puts flames out, burning skeletons shoot flaming arrows, burning mobs and flint and steel set what they hit alight, punching fire burns you, water bottles put fire out, and mobs killed by fire drop cooked food. Port of Better Burning by Darkhax.",
+	"authors": ["traelmyx"],
+	"contributors": ["Darkhax (original mod)"],
+	"contact": {
+		"sources": "https://github.com/traelmyx/better-burning-reborn",
+		"issues": "https://github.com/traelmyx/better-burning-reborn/issues"
+	},
+	"license": "LGPL-2.1-only",
+	"icon": "assets/betterburning/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["io.github.traelmyx.betterburning.fabric.BetterBurningFabric"]
+	},
+	"mixins": ["betterburning.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "${mc_dep}",
+		"java": ">=${java}",
+		"fabric-api": "*"
+	}
+}
